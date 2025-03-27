@@ -47,10 +47,10 @@ int main() {
     scanf("%d", &pTuristicos1);
 
     // operadores para calculo o pib per capta e densidade demografica carta 1.
-    pibPer1 = pib1 / populacao1;
-    densidade1 = populacao1 / area1;
+    pibPer1 = (float) pib1 / populacao1;
+    densidade1 = (float) populacao1 / area1;
     
-    // comandos para impressão da carta 2.
+    // comandos para solicitação e impressão dos dados da carta 2.
     printf("*** Carta 2 *** \n");
     printf("insira o estado: \n");
     scanf("%s", estado2);
@@ -74,9 +74,10 @@ int main() {
     scanf("%d", &pTuristicos2);
 
     // operadores para calculo do pib per capta e densidade demografica carta 2.
-    pibPer2 = pib2 / populacao2;
-    densidade2 = populacao2 / area2;
-
+    pibPer2 = (float) pib2 / populacao2;
+    densidade2 = (float) populacao2 / area2;
+    
+    // impressão da carta 1
     printf("*** Carta 1 *** \n");
 
     printf("estado: %s\n", estado1);
@@ -88,7 +89,9 @@ int main() {
     printf("pontos turísticos: %d\n", pTuristicos1);
     printf("PIB Per Capta: %.2f Reais\n", pibPer1);
     printf("Densidade demográfica: %.2f hab/km²\n", densidade1);
+    
 
+    // impressão da carta 2
     printf("*** Carta 2 *** \n");
 
     printf("estado: %s\n", estado2);
